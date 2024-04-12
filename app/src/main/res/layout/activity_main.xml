@@ -16,8 +16,12 @@
         android:text="Leicht"
         android:textSize="34sp"
         app:cornerRadius="30dip"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="192dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <Button
         android:id="@+id/buttonBestätigen"
@@ -28,8 +32,11 @@
         android:text="Bestätigen"
         android:textSize="34sp"
         app:cornerRadius="30dip"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="572dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
 
     <Button
         android:id="@+id/buttonStark"
@@ -40,8 +47,12 @@
         android:text="Stark"
         android:textSize="34sp"
         app:cornerRadius="30dip"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="372dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
 
     <Button
         android:id="@+id/buttonSehrStark"
@@ -52,8 +63,12 @@
         android:text="Sehr Stark"
         android:textSize="34sp"
         app:cornerRadius="30dip"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="372dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
 
     <Button
         android:id="@+id/buttonMittel"
@@ -64,17 +79,23 @@
         android:text="Mittel"
         android:textSize="34sp"
         app:cornerRadius="30dip"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="192dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <TextView
         android:id="@+id/GerätVerbundenText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
         android:text="Gerät verbunden"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/VibrationsstärkeText"
@@ -82,7 +103,11 @@
         android:layout_height="wrap_content"
         android:text="Vibrationsstärke"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="130dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
