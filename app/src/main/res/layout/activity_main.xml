@@ -7,43 +7,82 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/uname"
-        android:layout_width="261dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="User"
+    <Button
+        android:id="@+id/buttonLeicht"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:backgroundTint="#4169E1"
+        android:lineSpacingExtra="8sp"
+        android:text="Leicht"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="261dp"
-        android:layout_height="63dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:cornerRadius="30dip"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="192dp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="258dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="Login"
+        android:id="@+id/buttonBestätigen"
+        android:layout_width="358dp"
+        android:layout_height="119dp"
+        android:backgroundTint="#4169E1"
+        android:lineSpacingExtra="8sp"
+        android:text="Bestätigen"
         android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:cornerRadius="30dip"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+    <Button
+        android:id="@+id/buttonStark"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:backgroundTint="#4169E1"
+        android:lineSpacingExtra="8sp"
+        android:text="Stark"
+        android:textSize="34sp"
+        app:cornerRadius="30dip"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <Button
+        android:id="@+id/buttonSehrStark"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:backgroundTint="#4169E1"
+        android:lineSpacingExtra="8sp"
+        android:text="Sehr Stark"
+        android:textSize="34sp"
+        app:cornerRadius="30dip"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <Button
+        android:id="@+id/buttonMittel"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:backgroundTint="#4169E1"
+        android:lineSpacingExtra="8sp"
+        android:text="Mittel"
+        android:textSize="34sp"
+        app:cornerRadius="30dip"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <TextView
+        android:id="@+id/GerätVerbundenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerät verbunden"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/VibrationsstärkeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibrationsstärke"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="130dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
