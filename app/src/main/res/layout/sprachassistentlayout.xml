@@ -43,18 +43,23 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="61dp"
-        android:layout_height="57dp"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="301dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
         android:text="Gerät verbunden"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
