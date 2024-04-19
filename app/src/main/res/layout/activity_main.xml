@@ -14,7 +14,7 @@
         android:layout_height="152dp"
         android:backgroundTint="#4169E1"
         android:lineSpacingExtra="8sp"
-        android:text="Leichtt"
+        android:text="Leicht"
         android:textSize="34sp"
         app:cornerRadius="30dip"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,6 +55,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.64" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="478dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/VibrationsstärkeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/custom_oval_shape" />
+
     <Button
         android:id="@+id/buttonSehrStark"
         android:layout_width="152dp"
@@ -92,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:text="Gerät verbunden"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,6 +119,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.16000003" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
