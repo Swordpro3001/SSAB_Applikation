@@ -59,11 +59,11 @@
         android:id="@+id/imageView3"
         android:layout_width="478dp"
         android:layout_height="246dp"
-        android:layout_marginBottom="35dp"
-        app:layout_constraintBottom_toBottomOf="@+id/VibrationsstärkeText"
+        android:layout_marginTop="-130dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/custom_oval_shape" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/custom_oval_shape"/>
 
     <Button
         android:id="@+id/buttonSehrStark"
@@ -98,7 +98,7 @@
         app:layout_constraintVertical_bias="0.32999998" />
 
     <TextView
-        android:id="@+id/GerätVerbundenText"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
