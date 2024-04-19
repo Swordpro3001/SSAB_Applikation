@@ -14,7 +14,7 @@
         android:layout_height="152dp"
         android:backgroundTint="#4169E1"
         android:lineSpacingExtra="8sp"
-        android:text="Leicht"
+        android:text="Leichtt"
         android:textSize="34sp"
         app:cornerRadius="30dip"
         app:layout_constraintBottom_toBottomOf="parent"
