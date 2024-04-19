@@ -8,6 +8,19 @@
     android:background="@drawable/unsereshapes"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="762dp"
+        android:layout_height="1290dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLeicht"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/custom_oval_shape" />
+
     <Button
         android:id="@+id/buttonLeicht"
         android:layout_width="152dp"
@@ -23,6 +36,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32999998" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="446dp"
+        android:layout_height="249dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/VibrationsstärkeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/custom_oval_shape" />
 
     <Button
         android:id="@+id/buttonBestätigen"
