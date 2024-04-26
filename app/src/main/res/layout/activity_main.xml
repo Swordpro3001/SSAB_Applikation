@@ -49,12 +49,12 @@
         app:srcCompat="@drawable/custom_oval_shape" />
 
     <Button
-        android:id="@+id/buttonBestätigen"
+        android:id="@+id/buttonBestatigen"
         android:layout_width="358dp"
         android:layout_height="119dp"
         android:backgroundTint="#4169E1"
         android:lineSpacingExtra="8sp"
-        android:text="Bestätigen"
+        android:text="Bestatigen"
         android:textSize="34sp"
         app:cornerRadius="30dip"
         app:layout_constraintBottom_toBottomOf="parent"

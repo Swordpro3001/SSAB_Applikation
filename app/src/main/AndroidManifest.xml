@@ -16,6 +16,9 @@
             android:name=".ui.theme.MainPageActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.theme.StartPage"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
