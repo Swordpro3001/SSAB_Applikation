@@ -23,6 +23,7 @@
 
     <Button
         android:id="@+id/buttonLeicht"
+        android:hint="buttonLeicht"
         android:layout_width="152dp"
         android:layout_height="152dp"
         android:backgroundTint="#4169E1"
@@ -50,6 +51,7 @@
 
     <Button
         android:id="@+id/buttonBestatigen"
+        android:hint="buttonBestaetigen"
         android:layout_width="358dp"
         android:layout_height="119dp"
         android:backgroundTint="#4169E1"
@@ -65,6 +67,7 @@
 
     <Button
         android:id="@+id/buttonStark"
+        android:hint="buttonStark"
         android:layout_width="152dp"
         android:layout_height="152dp"
         android:backgroundTint="#4169E1"
@@ -91,6 +94,7 @@
 
     <Button
         android:id="@+id/buttonSehrStark"
+        android:hint="buttonSehrStark"
         android:layout_width="152dp"
         android:layout_height="152dp"
         android:backgroundTint="#4169E1"
@@ -107,6 +111,7 @@
 
     <Button
         android:id="@+id/buttonMittel"
+        android:hint="buttonMittel"
         android:layout_width="152dp"
         android:layout_height="152dp"
         android:backgroundTint="#4169E1"
@@ -123,6 +128,7 @@
 
     <TextView
         android:id="@+id/textView"
+        android:hint="Gerät verbunden"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -134,6 +140,7 @@
 
     <TextView
         android:id="@+id/VibrationsstärkeText"
+        android:hint="Virbationsstärke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Vibrationsstärke"
