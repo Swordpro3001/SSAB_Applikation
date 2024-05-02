@@ -7,13 +7,8 @@ import android.widget.*;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.example.myapplication.ui.theme.StartPage;
-
-public class MainActivity extends AppCompatActivity {
+public class Vibration_Page1 extends AppCompatActivity {
 
     private EditText uname, password;
 
@@ -21,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.vibration_page1);
 
         Button button1 = findViewById(R.id.buttonBestatigen);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, StartPage.class);
+                Intent intent = new Intent(Vibration_Page1.this, StartPage_Page2.class);
                 startActivity(intent);
             }
         });
