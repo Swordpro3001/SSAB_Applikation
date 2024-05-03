@@ -98,6 +98,38 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/fortfahrenpause"
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#EAF3FE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/pause"
+        android:layout_width="73dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/fortfahren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pause"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/fortfahren"
+        android:layout_width="73dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fortfahren"
+        tools:visibility="gone" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
