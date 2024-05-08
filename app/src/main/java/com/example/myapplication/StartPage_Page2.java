@@ -7,7 +7,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -56,13 +58,29 @@ public class StartPage_Page2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 toggleImageViews();
-                pauseChronometer();
                 if(zaehler % 2 != 0){
                     startChronometer();
+                } else {
+                    pauseChronometer();
                 }
                 zaehler++;
             }
         });
+
+
+        /*
+        stopPauseButtonKlein.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked && zaehler != 1){
+                    startChronometer();
+                } else{
+                    pauseChronometer();
+                }
+                zaehler = 2;
+            }
+        });
+         */
     }
 
     private void toggleChronometer() {
@@ -73,7 +91,7 @@ public class StartPage_Page2 extends AppCompatActivity {
             chronometer.setVisibility(View.GONE);
             pause.setVisibility(View.GONE);
             fortfahren.setVisibility(View.GONE);
-            pauseChronometer();
+            resetChronometer();
         } else {
             startButton.setText("Stop");
             startButton.startAnimation(slideUpAnimation);
@@ -95,6 +113,15 @@ public class StartPage_Page2 extends AppCompatActivity {
         chronometer.stop();
         pauseOffset = SystemClock.elapsedRealtime() - chronometer.getBase();
         isPlaying = false;
+    }
+
+    private void resetChronometer(){
+        if(isPlaying){
+            chronometer.setBase(SystemClock.elapsedRealtime());
+            pauseOffset = 0;
+            chronometer.start();
+            isPlaying = true;
+        }
     }
 
     private void toggleImageViews() {
