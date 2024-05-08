@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
@@ -22,7 +21,7 @@ public class StartPage_Page2 extends AppCompatActivity {
     private boolean isPlaying = false;
     private int zaehler = 0;
 
-    private ImageView pause, fortfahren, zurueck;
+    private ImageView pause, fortfahren;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +34,11 @@ public class StartPage_Page2 extends AppCompatActivity {
 
         pause = findViewById(R.id.pause);
         fortfahren = findViewById(R.id.fortfahren);
-        zurueck = findViewById(R.id.zurueck);
 
         slideUpAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_up);
         slideDownAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_down);
 
+        // Initially hide the stop button and chronometer
         stopPauseButtonKlein.setVisibility(View.GONE);
         chronometer.setVisibility(View.GONE);
 
@@ -64,14 +63,8 @@ public class StartPage_Page2 extends AppCompatActivity {
                 zaehler++;
             }
         });
-        zurueck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(StartPage_Page2.this, Vibration_Page1.class);
-                startActivity(intent);
-            }
-        });
     }
+
     private void toggleChronometer() {
         if (isExpanded) {
             startButton.setText("Start");
@@ -80,7 +73,6 @@ public class StartPage_Page2 extends AppCompatActivity {
             chronometer.setVisibility(View.GONE);
             pause.setVisibility(View.GONE);
             fortfahren.setVisibility(View.GONE);
-            zurueck.setVisibility(View.VISIBLE);
             pauseChronometer();
         } else {
             startButton.setText("Stop");
@@ -88,7 +80,6 @@ public class StartPage_Page2 extends AppCompatActivity {
             stopPauseButtonKlein.setVisibility(View.VISIBLE);
             chronometer.setVisibility(View.VISIBLE);
             pause.setVisibility(View.VISIBLE);
-            zurueck.setVisibility(View.GONE);
             startChronometer();
         }
         isExpanded = !isExpanded;
@@ -107,6 +98,7 @@ public class StartPage_Page2 extends AppCompatActivity {
     }
 
     private void toggleImageViews() {
+        // Umkehrung der Sichtbarkeit von pause und fortfahren
         int pauseVisibility = pause.getVisibility();
         int fortfahrenVisibility = fortfahren.getVisibility();
 
