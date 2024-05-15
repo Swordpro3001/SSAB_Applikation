@@ -71,20 +71,6 @@ public class StartPage_Page2 extends AppCompatActivity {
         });
     }
 
-    /*
-        stopPauseButtonKlein.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked && zaehler != 1){
-                    startChronometer();
-                } else{
-                    pauseChronometer();
-                }
-                zaehler = 2;
-            }
-        });
-         */
-
     private void toggleChronometer() {
         if (isExpanded) {
             startButton.setText("Start");
