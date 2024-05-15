@@ -1,12 +1,12 @@
 package com.example.myapplication;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.*;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.*;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.activity.EdgeToEdge;
+        import androidx.appcompat.app.AppCompatActivity;
 
 public class Vibration_Page1 extends AppCompatActivity {
 

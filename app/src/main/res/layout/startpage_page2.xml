@@ -131,5 +131,15 @@
         app:srcCompat="@drawable/fortfahren"
         tools:visibility="gone" />
 
+    <ImageView
+        android:id="@+id/zurueck"
+        android:layout_width="64dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/zurueck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
