@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
@@ -13,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class StartPage_Page2 extends AppCompatActivity {
-
     private Button startButton, stopPauseButtonKlein;
     private Chronometer chronometer;
     private boolean isExpanded = false;
@@ -22,7 +22,7 @@ public class StartPage_Page2 extends AppCompatActivity {
     private boolean isPlaying = false;
     private int zaehler = 0;
 
-    private ImageView pause, fortfahren;
+    private ImageView pause, fortfahren, zurueck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,7 @@ public class StartPage_Page2 extends AppCompatActivity {
         startButton = findViewById(R.id.button1);
         chronometer = findViewById(R.id.chronometer);
         stopPauseButtonKlein = findViewById(R.id.fortfahrenpause);
+        zurueck = findViewById(R.id.zurueck);
 
         pause = findViewById(R.id.pause);
         fortfahren = findViewById(R.id.fortfahren);
@@ -39,7 +40,8 @@ public class StartPage_Page2 extends AppCompatActivity {
         slideUpAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_up);
         slideDownAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_down);
 
-        // Initially hide the stop button and chronometer
+        zurueck.setVisibility(View.VISIBLE);
+
         stopPauseButtonKlein.setVisibility(View.GONE);
         chronometer.setVisibility(View.GONE);
 
@@ -58,10 +60,17 @@ public class StartPage_Page2 extends AppCompatActivity {
             public void onClick(View v) {
                 toggleImageViews();
                 pauseChronometer();
-                if(zaehler % 2 != 0){
+                if (zaehler % 2 != 0) {
                     startChronometer();
                 }
                 zaehler++;
+            }
+        });
+        zurueck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartPage_Page2.this, Vibration_Page1.class);
+                startActivity(intent);
             }
         });
     }
@@ -75,13 +84,16 @@ public class StartPage_Page2 extends AppCompatActivity {
             pause.setVisibility(View.GONE);
             fortfahren.setVisibility(View.GONE);
             pauseChronometer();
+            zurueck.setVisibility(View.VISIBLE);
         } else {
             startButton.setText("Stop");
             startButton.startAnimation(slideUpAnimation);
             stopPauseButtonKlein.setVisibility(View.VISIBLE);
             chronometer.setVisibility(View.VISIBLE);
             pause.setVisibility(View.VISIBLE);
+            fortfahren.setVisibility(View.GONE);
             startChronometer();
+            zurueck.setVisibility(View.GONE);
         }
         isExpanded = !isExpanded;
     }
@@ -99,7 +111,6 @@ public class StartPage_Page2 extends AppCompatActivity {
     }
 
     private void toggleImageViews() {
-        // Umkehrung der Sichtbarkeit von pause und fortfahren
         int pauseVisibility = pause.getVisibility();
         int fortfahrenVisibility = fortfahren.getVisibility();
 
