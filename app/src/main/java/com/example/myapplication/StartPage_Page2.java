@@ -9,8 +9,9 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-public class StartPage_Page2 extends AppCompatActivity {
 
+public class StartPage_Page2 extends AppCompatActivity {
+    // asdjklasjdklasjdkljasdlkjsalkdasjdlksajdjasdljkasdlkjasd
     private Button button1, button2, button3;
     private boolean isExpanded = false;
     private Animation slideUpAnimation, slideDownAnimation;
