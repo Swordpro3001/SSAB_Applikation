@@ -60,7 +60,6 @@ public class StartPage_Page2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 toggleImageViews();
-                pauseChronometer();
                 if (zaehler % 2 != 0) {
                     startChronometer();
                 } else {
@@ -86,7 +85,7 @@ public class StartPage_Page2 extends AppCompatActivity {
             chronometer.setVisibility(View.GONE);
             pause.setVisibility(View.GONE);
             fortfahren.setVisibility(View.GONE);
-            pauseChronometer();
+            resetChronometer();
             zurueck.setVisibility(View.VISIBLE);
         } else {
             startButton.setText("Stop");
