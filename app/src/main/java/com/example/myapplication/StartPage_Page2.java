@@ -10,6 +10,7 @@ import android.widget.Chronometer;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class StartPage_Page2 extends AppCompatActivity {
 
