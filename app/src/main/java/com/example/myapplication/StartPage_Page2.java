@@ -7,9 +7,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Chronometer;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -66,9 +64,9 @@ public class StartPage_Page2 extends AppCompatActivity {
                 zaehler++;
             }
         });
+    }
 
-
-        /*
+    /*
         stopPauseButtonKlein.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -81,7 +79,6 @@ public class StartPage_Page2 extends AppCompatActivity {
             }
         });
          */
-    }
 
     private void toggleChronometer() {
         if (isExpanded) {
