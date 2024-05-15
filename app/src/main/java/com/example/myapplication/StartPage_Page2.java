@@ -69,6 +69,13 @@ public class StartPage_Page2 extends AppCompatActivity {
                 zaehler++;
             }
         });
+        zurueck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartPage_Page2.this, Vibration_Page1.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void toggleChronometer() {
